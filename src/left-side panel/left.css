@@ -1,0 +1,21 @@
+.left{
+    height: auto;
+    width: 40px;
+    background: rgb(238, 239, 245) none repeat scroll 0% 0%;
+}
+.plus-sign{
+    fill: rgb(106, 106, 106); vertical-align: middle; width: 30px; height: 30px;
+}
+.symbolBox{
+    padding: 10px 5px; 
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.symbol{
+    fill: rgb(106, 106, 106); vertical-align: middle; width: 30px; height: 30px;
+}
+ul{
+    margin: 0px; padding: 0px;
+}
+li{
+    list-style: none; padding: 5px;
+}
