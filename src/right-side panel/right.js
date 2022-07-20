@@ -1,13 +1,25 @@
-import './right.css';
+import RightCSS from './right.module.css';
 import Display from '../display/display';
-const Right=()=>{
+import Data from '../data/data';
+import Transform from '../Transform/transform';
+import Text from '../text/text';
+import Color from '../color/color';
+import Disposition from '../disposition/disposition';
+import Elements from '../elements/elements';
+const Right = () => {
     return (
         <>
-        <div className='right'>
-        <div className='right-panel'>
-                <Display/>
+            <div className={RightCSS.right}>
+                <div className={RightCSS.rightPanel}>
+                    <Display />
+                    <Data />
+                    <Transform />
+                    <Text />
+                    <Color />
+                    <Disposition />
+                    <Elements />
                 </div>
-           </div>
+            </div>
         </>
     )
 }

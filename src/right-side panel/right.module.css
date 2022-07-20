@@ -1,7 +1,10 @@
 .right {
-    width: 250px; overflow: hidden auto; max-height: 100vh;
+    width: 250px;
+    overflow: hidden auto;
+    max-height: 100vh;
 }
-.right-panel{
+
+.rightPanel {
     position: relative;
     width: 240px;
     padding: 0px 5px 6px;

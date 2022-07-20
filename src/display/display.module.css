@@ -1,19 +1,20 @@
-.display{
-    background-color: rgb(241, 241, 241); 
-    overflow: hidden; 
-    padding-bottom: 12px; 
-    padding-top: 2px; 
-    padding-left: 10px; 
+.display {
+    background-color: rgb(241, 241, 241);
+    overflow: hidden;
+    padding-bottom: 12px;
+    padding-top: 2px;
+    padding-left: 10px;
     border: 0px solid rgb(211, 211, 211);
     margin-bottom: 5px;
 }
-.affichage{
+
+.affichage {
     float: left;
     width: 85px;
     padding: 3px;
 }
 
-.display-input {
+.displayInput {
     background: rgb(255, 255, 255) none repeat scroll 0% 0%;
     border-width: 0px;
     padding: 3px 5px;
@@ -22,29 +23,40 @@
     width: 50px;
     outline: currentcolor none medium;
 }
-.unit{
-    float: left; margin-right: 5px; margin-left: -20px; color: gray; font-size: 13px; padding: 3px;
+
+.unit {
+    float: left;
+    margin-right: 5px;
+    margin-left: -20px;
+    color: gray;
+    font-size: 13px;
+    padding: 3px;
 }
 
-.options{
+.options {
     overflow: hidden;
     margin-top: 10px;
 }
+
 .space {
     float: left;
     width: 85px;
     padding: 3px;
 }
-.button{
-    float: left; margin-right: 5px;
+
+.button {
+    float: left;
+    margin-right: 5px;
 }
-.button-link{
+
+.buttonLink {
     color: rgb(81, 81, 81);
     text-decoration: none;
     display: block;
     padding: 2px 0px;
 }
-.real-size{
+
+.realSize {
     color: rgb(34, 34, 34);
     text-decoration: none;
     display: block;
