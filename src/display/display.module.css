@@ -1,11 +1,16 @@
 .display {
-    background-color: rgb(241, 241, 241);
+    /*background-color: rgb(241, 241, 241);*/
     overflow: hidden;
     padding-bottom: 12px;
     padding-top: 2px;
     padding-left: 10px;
     border: 0px solid rgb(211, 211, 211);
     margin-bottom: 5px;
+}
+
+.horizontalBar{
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 .affichage {

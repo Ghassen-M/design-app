@@ -1,5 +1,5 @@
 .color {
-    background-color: rgb(241, 241, 241);
+    /*background-color: rgb(241, 241, 241);*/
     overflow: hidden;
     padding-bottom: 12px;
     padding-top: 2px;
@@ -11,6 +11,7 @@
 .horizontalBar {
     overflow: hidden;
     margin-top: 10px;
+    padding: 5px;
 }
 
 .label {

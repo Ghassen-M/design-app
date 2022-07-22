@@ -1,7 +1,9 @@
 import ColorCSS from './color.module.css';
+import { Select,MenuItem,Box  } from '@mui/material';
+
 const Color = () => {
     return (
-        <>
+        <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
             <div className={ColorCSS.color}>
                 <div className={ColorCSS.horizontalBar}>
                     <div className={ColorCSS.label}>Couleur</div>
@@ -17,28 +19,28 @@ const Color = () => {
                 <div className={ColorCSS.horizontalBar}>
                     <div className={ColorCSS.label}>Filtre</div>
                     <div className={ColorCSS.rightSpace}>
-                        <select className={ColorCSS.filterSelection}>
-                            <option value="normal">normal</option>
-                            <option value="multiply">multiply</option>
-                            <option value="screen">screen</option>
-                            <option value="overlay">overlay</option>
-                            <option value="darken">darken</option>
-                            <option value="lighten">lighten</option>
-                            <option value="color-dodge">color-dodge</option>
-                            <option value="color-burn">color-burn</option>
-                            <option value="hard-light">hard-light</option>
-                            <option value="soft-light">soft-light</option>
-                            <option value="difference">difference</option>
-                            <option value="exclusion">exclusion</option>
-                            <option value="hue">hue</option>
-                            <option value="saturation">saturation</option>
-                            <option value="color">color</option>
-                            <option value="luminosity">luminosity</option>
-                        </select>
+                        <Select value={"normal"} sx={{mt:"5px",mb:"5px", padding:"3px 3px 3px 5px",height:30,width:120}} /*className={ColorCSS.filterSelection}*/>
+                            <MenuItem value={"normal"}>normal</MenuItem>
+                            <MenuItem value={"multiply"}>multiply</MenuItem>
+                            <MenuItem value={"screen"}>screen</MenuItem>
+                            <MenuItem value={"overlay"}>overlay</MenuItem>
+                            <MenuItem value={"darken"}>darken</MenuItem>
+                            <MenuItem value={"lighten"}>lighten</MenuItem>
+                            <MenuItem value={"color-dodge"}>color-dodge</MenuItem>
+                            <MenuItem value={"color-burn"}>color-burn</MenuItem>
+                            <MenuItem value={"hard-light"}>hard-light</MenuItem>
+                            <MenuItem value={"soft-light"}>soft-light</MenuItem>
+                            <MenuItem value={"difference"}>difference</MenuItem>
+                            <MenuItem value={"exclusion"}>exclusion</MenuItem>
+                            <MenuItem value={"hue"}>hue</MenuItem>
+                            <MenuItem value={"saturation"}>saturation</MenuItem>
+                            <MenuItem value={"color"}>color</MenuItem>
+                            <MenuItem value={"luminosity"}>luminosity</MenuItem>
+                        </Select>
                     </div>
                 </div>
             </div>
-        </>
+        </Box>
     )
 }
 export default Color;

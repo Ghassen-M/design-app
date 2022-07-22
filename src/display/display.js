@@ -1,11 +1,18 @@
 import DisplayCSS from './display.module.css';
+import { Box,TextField,InputAdornment  } from '@mui/material';
+
 const Display = () => {
   return (
-    <>
+    <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
       <div className={DisplayCSS.display}>
+        <div className={DisplayCSS.horizontalBar}>
         <div className={DisplayCSS.affichage}>Affichage</div>
-        <input className={DisplayCSS.displayInput} value="100" />
-        <div className={DisplayCSS.unit}>%</div>
+        <TextField id="standard-basic"  InputProps={{
+            startAdornment: <InputAdornment position="start">%</InputAdornment>,
+          }} style={{width: 60,padding: "3px 5px"}} variant="standard" />
+        {/*<input className={DisplayCSS.displayInput} value="100" />
+        <div className={DisplayCSS.unit}>%</div>*/}
+        </div>
         <div className={DisplayCSS.options}>
           <div className={DisplayCSS.space}></div>
           <div className={DisplayCSS.button}>
@@ -48,7 +55,7 @@ const Display = () => {
           </div>
         </div>
       </div>
-    </>
+    </Box>
   )
 }
 export default Display;

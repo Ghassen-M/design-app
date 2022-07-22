@@ -1,7 +1,8 @@
 import DispositionCSS from './disposition.module.css';
+import {Box} from '@mui/material'
 const Disposition = () => {
     return (
-        <>
+        <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
             <div className={DispositionCSS.disposition}>
                 <div className={DispositionCSS.horizontalArea}>
                     <div className={DispositionCSS.leftArea}>Disposition</div>
@@ -42,7 +43,7 @@ const Disposition = () => {
                             </svg><span>En arrière-plan</span></a></div>
                 </div>
             </div>
-        </>
+        </Box>
     )
 }
 export default Disposition;

@@ -1,7 +1,9 @@
 import TextCSS from './text.module.css';
+import { Box,TextField,InputAdornment,FormControl,FilledInput,FormHelperText,Input,Select,MenuItem,Checkbox  } from '@mui/material';
+
 const Text = () => {
     return (
-        <>
+        <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
             <div className={TextCSS.text}>
                 <div className={TextCSS.horizentalBar}>
                     <div className={TextCSS.label}>Texte</div>
@@ -30,66 +32,74 @@ const Text = () => {
                             </svg>
                         </svg>
                         <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.styleWidget}></svg>
-                        <input type="number" min="1" className={TextCSS.fontSize} value="20" />
+                        
+                        <Input 
+         type='number'
+         min='1'
+          style={{width: 50,padding: "3px 5px"}}
+            value='20'
+          />
+                        {/*<input type="number" min="1" className={TextCSS.fontSize} value="20" />*/}
                         <br />
-                        <select className={TextCSS.fontSelection}>
-                            <option value="Alegreya Sans">Alegreya Sans</option>
-                            <option value="Alegreya">Alegreya</option>
-                            <option value="AmericanTypewriter, Georgia, serif">American Typewriter</option>
-                            <option value="Anonymous Pro">Anonymous Pro</option>
-                            <option value="Archivo Narrow">Archivo Narrow</option>
-                            <option value="Arvo">Arvo</option>
-                            <option value="Bitter">Bitter</option>
-                            <option value="Cardo">Cardo</option>
-                            <option value="Chivo">Chivo</option>
-                            <option value="Crimson Text">Crimson Text</option>
-                            <option value="Domine">Domine</option>
-                            <option value="Fira Sans">Fira Sans</option>
-                            <option value="Georgia, serif">Georgia</option>
-                            <option value="&quot;Helvetica Neue&quot;, Arial, sans-serif">Helvetica Neue</option>
-                            <option value="Helvetica, Arial, sans-serif">Helvetica</option>
-                            <option value="Inconsolata">Inconsolata</option>
-                            <option value="Karla">Karla</option>
-                            <option value="Lato">Lato</option>
-                            <option value="Libre Baskerville">Libre Baskerville</option>
-                            <option value="Lora">Lora</option>
-                            <option value="Merriweather">Merriweather</option>
-                            <option value="Monaco, consolas, monospace">Monaco</option>
-                            <option value="Montserrat">Montserrat</option>
-                            <option value="Neuton">Neuton</option>
-                            <option value="Old Standard TT">Old Standard TT</option>
-                            <option value="Open Sans">Open Sans</option>
-                            <option value="PT Serif">PT Serif</option>
-                            <option value="Playfair Display">Playfair Display</option>
-                            <option value="Poppins">Poppins</option>
-                            <option value="Roboto Slab">Roboto Slab</option>
-                            <option value="Roboto">Roboto</option>
-                            <option value="Source Pro">Source Pro</option>
-                            <option value="Source Sans Pro">Source Sans Pro</option>
-                            <option value="Varela Round">Varela Round</option>
-                            <option value="Work Sans">Work Sans</option>
-                        </select>
+                        <Select value={"Alegreya Sans"} sx={{mt:"5px",mb:"5px", padding:"3px 3px 3px 5px",height:30,width:170}}/*className={TextCSS.fontSelection}*/>
+                            <MenuItem value={"Alegreya Sans"}>Alegreya Sans</MenuItem>
+                            <MenuItem value={"Alegreya"}>Alegreya</MenuItem>
+                            <MenuItem value={"AmericanTypewriter, Georgia, serif"}>American Typewriter</MenuItem>
+                            <MenuItem value={"Anonymous Pro"}>Anonymous Pro</MenuItem>
+                            <MenuItem value={"Archivo Narrow"}>Archivo Narrow</MenuItem>
+                            <MenuItem value={"Arvo"}>Arvo</MenuItem>
+                            <MenuItem value={"Bitter"}>Bitter</MenuItem>
+                            <MenuItem value={"Cardo"}>Cardo</MenuItem>
+                            <MenuItem value={"Chivo"}>Chivo</MenuItem>
+                            <MenuItem value={"Crimson Text"}>Crimson Text</MenuItem>
+                            <MenuItem value={"Domine"}>Domine</MenuItem>
+                            <MenuItem value={"Fira Sans"}>Fira Sans</MenuItem>
+                            <MenuItem value={"Georgia, serif"}>Georgia</MenuItem>
+                           <MenuItem value={"&quot;Helvetica Neue&quot;, Arial, sans-serif"}>Helvetica Neue</MenuItem>
+                            <MenuItem value={"Helvetica, Arial, sans-serif"}>Helvetica</MenuItem>
+                           <MenuItem value={"Inconsolata"}>Inconsolata</MenuItem>
+                            <MenuItem value={"Karla"}>Karla</MenuItem>
+                            <MenuItem value={"Lato"}>Lato</MenuItem>
+                            <MenuItem value={"Libre Baskerville"}>Libre Baskerville</MenuItem>
+                            <MenuItem value={"Lora"}>Lora</MenuItem>
+                            <MenuItem value={"Merriweather"}>Merriweather</MenuItem>
+                            <MenuItem value={"Monaco, consolas, monospace"}>Monaco</MenuItem>
+                            <MenuItem value={"Montserrat"}>Montserrat</MenuItem>
+                            <MenuItem value={"Neuton"}>Neuton</MenuItem>
+                            <MenuItem value={"Old Standard TT"}>Old Standard TT</MenuItem>
+                            <MenuItem value={"Open Sans"}>Open Sans</MenuItem>
+                            <MenuItem value={"PT Serif"}>PT Serif</MenuItem>
+                            <MenuItem value={"Playfair Display"}>Playfair Display</MenuItem>
+                            <MenuItem value={"Poppins"}>Poppins</MenuItem>
+                            <MenuItem value={"Roboto Slab"}>Roboto Slab</MenuItem>
+                            <MenuItem value={"Roboto"}>Roboto</MenuItem>
+                            <MenuItem value={"Source Pro"}>Source Pro</MenuItem>
+                            <MenuItem value={"Source Sans Pro"}>Source Sans Pro</MenuItem>
+                            <MenuItem value={"Varela Round"}>Varela Round</MenuItem>
+                            <MenuItem value={"Work Sans"}>Work Sans</MenuItem>
+                        </Select>
                         <br />
-                        <textarea className={TextCSS.textZone} value={"Ajouter du texte..."}></textarea>
+                        <TextField variant="outlined"value={"Ajouter du texte..."} sx={{mt:"2px", padding:"3px", width:"90%", height:60, resize:"auto"}}/>
+                        {/*<textarea className={TextCSS.textZone} value={"Ajouter du texte..."}></textarea>*/}
                     </div>
                 </div>
                 <div className={TextCSS.horizentalBar}>
                     <div className={TextCSS.label}>Ajustement</div>
                     <div className={TextCSS.leftInputs}>
-                        <select className={TextCSS.adjustment}>
-                            <option value="false">Retour à la ligne auto</option>
-                            <option value="true">Ajuster la taile auto</option>
-                        </select>
+                        <Select value={"false"} sx={{mt:"5px",mb:"5px", padding:"3px 3px 3px 5px",height:30,width:"100%"}} /*className={TextCSS.adjustment}*/>
+                            <MenuItem value={"false"}>Retour à la ligne auto</MenuItem>
+                            <MenuItem value={"true"}>Ajuster la taile auto</MenuItem>
+                        </Select>
                     </div>
                 </div>
                 <div className={TextCSS.horizentalBar}>
-                    <div className={TextCSS.label}>Note</div>
-                    <div className={TextCSS.leftInputs}><input type="checkbox" /></div>
+                    <div className={TextCSS.label} style={{display:"inline-block"}}>Note</div>
+                    <div className={TextCSS.leftInputs} style={{display:"inline-block"}}><Checkbox sx={{mr:"5px"}}/></div>
                 </div>
                 <div style={{ display: "none" }}></div>
                 <div className={TextCSS.horizentalBar}>
                     <div className={TextCSS.label}>Arrondi</div>
-                    <div className={TextCSS.leftInputs}><input type="checkbox" /></div>
+                    <div className={TextCSS.leftInputs}><Checkbox /></div>
                 </div>
                 <div style={{ display: "none" }}></div>
                 <div className={TextCSS.horizentalBar}>
@@ -125,11 +135,19 @@ const Text = () => {
                 <div className={TextCSS.horizentalBar}>
                     <div className={TextCSS.label}>Interligne</div>
                     <div className={TextCSS.leftInputs}>
-                        <input type="number" min="0" className={TextCSS.lineSpacing} value="1" /><span>pt</span></div>
+                    <Input 
+         type='number'
+         min='1'
+          style={{width: 50,padding: "3px 5px"}}
+            value='1'
+          />
+                        {/*<input type="number" min="0" className={TextCSS.lineSpacing} value="1" />*/}
+                        <span>pt</span>
+                        </div>
                 </div>
             </div>
 
-        </>
+        </Box>
     )
 }
 export default Text;
