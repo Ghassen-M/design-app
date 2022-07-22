@@ -1,19 +1,29 @@
 import DisplayCSS from './display.module.css';
 import { Box,TextField,InputAdornment  } from '@mui/material';
-
+import {Grid, Item} from '@mui/material'
+import { textAlign } from '@mui/system';
 const Display = () => {
   return (
-    <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
+    <Box sx={{borderBottom:3, borderColor:"#007EFD", boxShadow: 3, mb : 2 }} >
       <div className={DisplayCSS.display}>
-        <div className={DisplayCSS.horizontalBar}>
-        <div className={DisplayCSS.affichage}>Affichage</div>
+      <Grid container>
+
+        {/*<div className={DisplayCSS.horizontalBar}>*/}
+        <Grid item md={4} sx={{display:"flex",alignSelf:"center"}}>        
+        {/*<div className={DisplayCSS.affichage}></div>*/}    
+        Affichage
+        </Grid>
+        <Grid item md={8}>                  
         <TextField id="standard-basic"  InputProps={{
             startAdornment: <InputAdornment position="start">%</InputAdornment>,
-          }} style={{width: 60,padding: "3px 5px"}} variant="standard" />
+          }} style={{width: 60,padding: "3px 5px"}} variant="standard" />     
         {/*<input className={DisplayCSS.displayInput} value="100" />
         <div className={DisplayCSS.unit}>%</div>*/}
-        </div>
-        <div className={DisplayCSS.options}>
+        </Grid>
+        {/*</div>*/}
+        <Grid item md={4}/>
+        <Grid item md={8}> 
+        <div sx={{display:"flex",alignItems:"right"}} className={DisplayCSS.options}>
           <div className={DisplayCSS.space}></div>
           <div className={DisplayCSS.button}>
             <div title="Zoom avant">
@@ -54,8 +64,11 @@ const Display = () => {
             </div>
           </div>
         </div>
+        </Grid>
+        </Grid>
       </div>
     </Box>
+    
   )
 }
 export default Display;

@@ -3,7 +3,7 @@ import { Box,TextField,InputAdornment,FormControl,FilledInput,FormHelperText,Inp
 
 const Text = () => {
     return (
-        <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
+        <Box sx={{ borderBottom:3, borderColor:"#007EFD", boxShadow: 3, mb : 2 }} >
             <div className={TextCSS.text}>
                 <div className={TextCSS.horizentalBar}>
                     <div className={TextCSS.label}>Texte</div>

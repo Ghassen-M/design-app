@@ -2,7 +2,7 @@ import DataCSS from './data.module.css';
 import {Box} from '@mui/material'
 const Data = () => {
     return (
-        <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
+        <Box sx={{ borderBottom:3, borderColor:"#007EFD", boxShadow: 3, mb : 2 }} >
             <div className="metadat-loader">
                 <div className={DataCSS.data}>
                     <div className={DataCSS.horizentalBar}>

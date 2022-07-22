@@ -2,7 +2,7 @@ import ElementsCSS from './elements.module.css';
 import {Box} from '@mui/material'
 const Elements = () => {
     return (
-        <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
+        <Box sx={{ borderBottom:3, borderColor:"#007EFD", boxShadow: 3, mb : 2 }} >
             <div className={ElementsCSS.elements}>
                 <div className={ElementsCSS.elementsArea}>
                     <br />

@@ -3,7 +3,7 @@ import { Box,TextField,InputAdornment,FormControl,FilledInput,FormHelperText,Inp
 
 const Transform = () => {
     return (
-      <Box borderBottom={3} borderColor={"#007EFD"} sx={{ boxShadow: 3, mb : 2 }} >
+      <Box sx={{ borderBottom:3, borderColor:"#007EFD", boxShadow: 3, mb : 2 }} >
             <div className={TransformCSS.transform}>
                 <div className={TransformCSS.horizontalBar}>
                     <div className={TransformCSS.label}>Taille</div>
