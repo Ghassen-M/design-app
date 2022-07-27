@@ -1,15 +1,15 @@
 .text {
     /*background-color: rgb(241, 241, 241);*/
     overflow: hidden;
-    padding-bottom: 12px;
+    /*padding-bottom: 12px;
     padding-top: 2px;
-    padding-left: 10px;
+    padding-left: 10px;*/
     border: 0px solid rgb(211, 211, 211);
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
 }
 
-.horizentalBar {
-    overflow: hidden;
+.horizontalBar {
+    /*overflow: hidden;*/
     /*height: 40px;*/
     margin-top: 10px;
     padding-top: 5px;

@@ -1,13 +1,16 @@
 import TextCSS from './text.module.css';
-import { Box,TextField,InputAdornment,FormControl,FilledInput,FormHelperText,Input,Select,MenuItem,Checkbox  } from '@mui/material';
+import { Box,TextField,InputAdornment,FormControl,FilledInput,FormHelperText,Input,Select,MenuItem,Checkbox, Typography,Grid  } from '@mui/material';
 
 const Text = () => {
     return (
-        <Box sx={{ borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2 }} >
+        <Box sx={{ borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2, padding:"10px" }} >
             <div className={TextCSS.text}>
-                <div className={TextCSS.horizentalBar}>
-                    <div className={TextCSS.label}>Texte</div>
-                    <div className={TextCSS.leftInputs}>
+                {/*<div className={TextCSS.horizontalBar}>*/}
+                    {/*<div className={TextCSS.label}>Texte</div>*/}
+                    <Typography>Texte</Typography>
+                    <Grid container>
+                    {/*<div className={TextCSS.leftInputs}>*/}
+                        <Grid item xs={3}>
                         <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.styleWidget}>
                             <g>
                                 <path d="M10 4v3h2.21l-3.42 8h-2.79v3h8v-3h-2.21l3.42-8h2.79v-3z"></path>
@@ -31,7 +34,10 @@ const Text = () => {
                                 </g>
                             </svg>
                         </svg>
-                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.styleWidget}></svg>
+                        {/*<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.styleWidget}>
+                        </svg>*/}
+                        </Grid>
+                        <Grid item xs={3}>
                         <TextField
                         inputProps={{
                           style: {
@@ -54,8 +60,11 @@ const Text = () => {
             value='20'
                     /> */}
                         {/*<input type="number" min="1" className={TextCSS.fontSize} value="20" />*/}
+                        </Grid>
+                        <Grid item xs={6}/>
                         <br />
-                        <Select value={"Alegreya Sans"} sx={{mt:"5px",mb:"5px", padding:"3px 3px 3px 5px",height:30,width:170}}/*className={TextCSS.fontSelection}*/>
+                        <Grid item xs={12}>
+                        <Select value={"Alegreya Sans"} sx={{mt:"5px",mb:"5px", padding:"3px",height:30,width:170}}/*className={TextCSS.fontSelection}*/>
                             <MenuItem value={"Alegreya Sans"}>Alegreya Sans</MenuItem>
                             <MenuItem value={"Alegreya"}>Alegreya</MenuItem>
                             <MenuItem value={"AmericanTypewriter, Georgia, serif"}>American Typewriter</MenuItem>
@@ -92,13 +101,19 @@ const Text = () => {
                             <MenuItem value={"Varela Round"}>Varela Round</MenuItem>
                             <MenuItem value={"Work Sans"}>Work Sans</MenuItem>
                         </Select>
+                        </Grid>
                         <br />
-                        <TextField variant="outlined"value={"Ajouter du texte..."} sx={{mt:"2px", padding:"3px", width:"90%", height:60, resize:"auto"}}/>
+                        <Grid item xs={12}>
+                        <TextField variant="outlined" value={"Ajouter du texte..."} sx={{mt:"2px", padding:"0px", width:"90%", height:60, resize:"auto"}}/>
                         {/*<textarea className={TextCSS.textZone} value={"Ajouter du texte..."}></textarea>*/}
-                    </div>
-                </div>
-                <div className={TextCSS.horizentalBar}>
-                    <div className={TextCSS.label}>Ajustement</div>
+                   {/*</div>*/}
+                        </Grid>
+                    </Grid>
+
+                {/*</div>*/}
+                <div className={TextCSS.horizontalBar}>
+                    <Typography>Ajustement</Typography>
+                    {/*<div className={TextCSS.label}>Ajustement</div>*/}
                     <div className={TextCSS.leftInputs}>
                         <Select value={"false"} sx={{mt:"5px",mb:"5px", padding:"3px 3px 3px 5px",height:30,width:"100%"}} /*className={TextCSS.adjustment}*/>
                             <MenuItem value={"false"}>Retour à la ligne auto</MenuItem>
@@ -106,18 +121,38 @@ const Text = () => {
                         </Select>
                     </div>
                 </div>
-                <div className={TextCSS.horizentalBar}>
-                    <div className={TextCSS.label} style={{display:"inline-block"}}>Note</div>
-                    <div className={TextCSS.leftInputs} style={{display:"inline-block"}}><Checkbox sx={{mr:"5px"}}/></div>
+                <div className={TextCSS.horizontalBar}>
+                    <Grid container>
+                    {/*<div className={TextCSS.label} style={{display:"inline-block"}}>Note</div>*/}
+                    <Grid item xs={5} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <Typography>Note</Typography>
+                    </Grid>
+                    <Grid item xs={7}>
+                        <Checkbox sx={{mr:"5px",display:"flex",justifyContent:"center",alignItems:"center"}}/>
+                    </Grid>
+                    </Grid>
+
                 </div>
                 <div style={{ display: "none" }}></div>
-                <div className={TextCSS.horizentalBar}>
-                    <div className={TextCSS.label}>Arrondi</div>
+                <div className={TextCSS.horizontalBar}>
+                    <Grid container>
+                    {/*<div className={TextCSS.label}>Arrondi</div>*/}
+                    <Grid item xs={5} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <Typography>Arrondi</Typography>
+                    </Grid>
+                    <Grid item xs={7} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     <div className={TextCSS.leftInputs}><Checkbox /></div>
+                    </Grid>
+                    </Grid>
                 </div>
                 <div style={{ display: "none" }}></div>
-                <div className={TextCSS.horizentalBar}>
-                    <div className={TextCSS.label}>Alignement</div>
+                <div className={TextCSS.horizontalBar}>
+                <Grid container>
+                <Grid item xs={5} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                <Typography>Alignement</Typography>
+                    {/*<div className={TextCSS.label}>Alignement</div>*/}
+                </Grid>
+                <Grid item xs={7} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     <div className={TextCSS.leftInputs}>
                         <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.preselectedWidget}>
                             <svg viewBox="0 -10 50 50">
@@ -144,10 +179,19 @@ const Text = () => {
                                     <rect width="230" x="1" y="67" height="33"></rect>
                                     <rect width="230" x="1" height="33"></rect>
                                 </g>
-                            </svg></svg></div>
-                </div>
-                <div className={TextCSS.horizentalBar}>
-                    <div className={TextCSS.label}>Interligne</div>
+                            </svg></svg>
+                    </div>
+                </Grid>
+                </Grid>
+                    </div>
+
+                <div className={TextCSS.horizontalBar}>
+                    {/*<div className={TextCSS.label}>Interligne</div>*/}
+                    <Grid container>
+                    <Grid item xs={5} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <Typography>Interligne</Typography>
+                    </Grid>
+                    <Grid item xs={7} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     <div className={TextCSS.leftInputs}>
                     <Input 
          type='number'
@@ -158,6 +202,9 @@ const Text = () => {
                         {/*<input type="number" min="0" className={TextCSS.lineSpacing} value="1" />*/}
                         <span>pt</span>
                         </div>
+                        </Grid>
+                        </Grid>
+
                 </div>
             </div>
 

@@ -6,7 +6,7 @@ const Data = () => {
             <div className="metadat-loader">
                 <div className={DataCSS.data}>
                     <Grid container sx={{mt:"10px"}}>
-                    {/*<div className={DataCSS.horizentalBar}>*/}
+                    {/*<div className={DataCSS.horizontalBar}>*/}
                         <Grid item xs={4} sx={{display:"flex",justifyContent:"center",alignItems:"center"}} >
                             
                         <Typography>Données</Typography>
@@ -20,7 +20,7 @@ const Data = () => {
                         </div>
                         </Grid>
                     {/*</div>*/}
-                    <div className={DataCSS.horizentalBar}>
+                    <div className={DataCSS.horizontalBar}>
                         <div className={DataCSS.leftspace}></div>
                         <div className={DataCSS.options}>
                             <Grid item xs={12}>

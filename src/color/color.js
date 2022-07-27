@@ -7,11 +7,11 @@ const Color = () => {
             <div className={ColorCSS.color}>
                 {/*<div className={ColorCSS.horizontalBar}>*/}
                 <Grid container >
-                    <Grid item xs={4} sx={{mb:"10px",display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <Grid item xs={4} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                         <Typography>Couleur</Typography>
                     </Grid>
                     {/*<div className={ColorCSS.label}>Couleur</div>*/}
-                    <Grid item xs={8} sx={{mb:"10px",display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <Grid item xs={8} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     <div className={ColorCSS.rightSpace}>
                         <div>
                             <a href="#" className={ColorCSS.colorLink}>
@@ -30,7 +30,7 @@ const Color = () => {
                     </Grid>
                     <Grid item xs={8} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     {/*<div className={ColorCSS.rightSpace}>*/}
-                        <Select value={"normal"} sx={{mt:"5px",mb:"5px", padding:"3px 3px 3px 5px",height:30,width:120}} /*className={ColorCSS.filterSelection}*/>
+                        <Select value={"normal"} sx={{mt:"5px",mb:"5px",height:30,width:120}} /*className={ColorCSS.filterSelection}*/>
                             <MenuItem value={"normal"}>normal</MenuItem>
                             <MenuItem value={"multiply"}>multiply</MenuItem>
                             <MenuItem value={"screen"}>screen</MenuItem>
