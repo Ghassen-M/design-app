@@ -2,7 +2,7 @@ import DataCSS from './data.module.css';
 import {Box,Grid,Typography,Select,MenuItem} from '@mui/material'
 const Data = () => {
     return (
-        <Box sx={{ borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2 }} >
+        <Box sx={{ borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2,padding:"10px" }} >
             <div className="metadat-loader">
                 <div className={DataCSS.data}>
                     <Grid container sx={{mt:"10px"}}>

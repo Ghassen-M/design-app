@@ -4,9 +4,9 @@ import {Grid, Item} from '@mui/material'
 import { textAlign } from '@mui/system';
 const Display = () => {
   return (
-    <Box sx={{borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2 }} >
+    <Box sx={{borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2, padding:"10px" }} >
       <div className={DisplayCSS.display}>
-      <Grid container sx={{pt:"10px"}}>
+      <Grid container>
 
         {/*<div className={DisplayCSS.horizontalBar}>*/}
         <Grid item xs={4}>        
