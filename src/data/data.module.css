@@ -9,7 +9,7 @@
 }
 
 .horizentalBar {
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin-top: 10px;
 }
 
@@ -21,7 +21,7 @@
 
 .options {
     float: left;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
 }
 
 .selection {

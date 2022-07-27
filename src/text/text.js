@@ -3,7 +3,7 @@ import { Box,TextField,InputAdornment,FormControl,FilledInput,FormHelperText,Inp
 
 const Text = () => {
     return (
-        <Box sx={{ borderBottom:3, borderColor:"#007EFD", boxShadow: 3, mb : 2 }} >
+        <Box sx={{ borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2 }} >
             <div className={TextCSS.text}>
                 <div className={TextCSS.horizentalBar}>
                     <div className={TextCSS.label}>Texte</div>
@@ -32,13 +32,27 @@ const Text = () => {
                             </svg>
                         </svg>
                         <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.styleWidget}></svg>
-                        
+                        <TextField
+                        inputProps={{
+                          style: {
+                            padding: 5
+                          },
+                          min:'1'
+                        }}
+          type="number"
+          min="1"
+
+          id="outlined-helperText"
+          defaultValue="20"
+          size='small'
+          style={{width: 50, padding: "3px 5px"}}
+        /> {/*
                         <Input 
          type='number'
          min='1'
           style={{width: 50,padding: "3px 5px"}}
             value='20'
-          />
+                    /> */}
                         {/*<input type="number" min="1" className={TextCSS.fontSize} value="20" />*/}
                         <br />
                         <Select value={"Alegreya Sans"} sx={{mt:"5px",mb:"5px", padding:"3px 3px 3px 5px",height:30,width:170}}/*className={TextCSS.fontSelection}*/>

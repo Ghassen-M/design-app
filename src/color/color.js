@@ -3,7 +3,7 @@ import { Select,MenuItem,Box  } from '@mui/material';
 
 const Color = () => {
     return (
-        <Box sx={{ borderBottom:3, borderColor:"#007EFD", boxShadow: 3, mb : 2 }} >
+        <Box sx={{ borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2 }} >
             <div className={ColorCSS.color}>
                 <div className={ColorCSS.horizontalBar}>
                     <div className={ColorCSS.label}>Couleur</div>
