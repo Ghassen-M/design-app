@@ -1,16 +1,13 @@
 import TextCSS from './text.module.css';
-import { Box,TextField,InputAdornment,FormControl,FilledInput,FormHelperText,Input,Select,MenuItem,Checkbox, Typography,Grid  } from '@mui/material';
+import { Box,TextField,Input,Select,MenuItem,Checkbox, Typography,Grid,FormControl  } from '@mui/material';
 
 const Text = () => {
     return (
-        <Box sx={{ borderBottom:3, borderColor:"#EEEFF5", boxShadow: 2, mb : 2, padding:"10px" }} >
+        <Box className={TextCSS.box}>
             <div className={TextCSS.text}>
-                {/*<div className={TextCSS.horizontalBar}>*/}
-                    {/*<div className={TextCSS.label}>Texte</div>*/}
                     <Typography>Texte</Typography>
                     <Grid container>
-                    {/*<div className={TextCSS.leftInputs}>*/}
-                        <Grid item xs={3}>
+                        <Grid item xs={3}  className={TextCSS.elementCentering}>
                         <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.styleWidget}>
                             <g>
                                 <path d="M10 4v3h2.21l-3.42 8h-2.79v3h8v-3h-2.21l3.42-8h2.79v-3z"></path>
@@ -34,126 +31,111 @@ const Text = () => {
                                 </g>
                             </svg>
                         </svg>
-                        {/*<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.styleWidget}>
-                        </svg>*/}
                         </Grid>
                         <Grid item xs={3}>
                         <TextField
-                        inputProps={{
-                          style: {
-                            padding: 5
-                          },
-                          min:'1'
-                        }}
-          type="number"
-          min="1"
-
-          id="outlined-helperText"
-          defaultValue="20"
-          size='small'
-          style={{width: 50, padding: "3px 5px"}}
-        /> {/*
-                        <Input 
-         type='number'
-         min='1'
-          style={{width: 50,padding: "3px 5px"}}
-            value='20'
-                    /> */}
-                        {/*<input type="number" min="1" className={TextCSS.fontSize} value="20" />*/}
+                            inputProps={{
+                            style: {
+                                padding: 5
+                            },
+                            min:'1'
+                            }}
+                            type="number"
+                            min={1}
+                            id="outlined-helperText"
+                            defaultValue="20"
+                            size='small'
+                            className={TextCSS.smallField}
+                        /> 
                         </Grid>
                         <Grid item xs={6}/>
                         <br />
                         <Grid item xs={12}>
-                        <Select value={"Alegreya Sans"} sx={{mt:"5px",mb:"5px", padding:"3px",height:30,width:170}}/*className={TextCSS.fontSelection}*/>
-                            <MenuItem value={"Alegreya Sans"}>Alegreya Sans</MenuItem>
-                            <MenuItem value={"Alegreya"}>Alegreya</MenuItem>
-                            <MenuItem value={"AmericanTypewriter, Georgia, serif"}>American Typewriter</MenuItem>
-                            <MenuItem value={"Anonymous Pro"}>Anonymous Pro</MenuItem>
-                            <MenuItem value={"Archivo Narrow"}>Archivo Narrow</MenuItem>
-                            <MenuItem value={"Arvo"}>Arvo</MenuItem>
-                            <MenuItem value={"Bitter"}>Bitter</MenuItem>
-                            <MenuItem value={"Cardo"}>Cardo</MenuItem>
-                            <MenuItem value={"Chivo"}>Chivo</MenuItem>
-                            <MenuItem value={"Crimson Text"}>Crimson Text</MenuItem>
-                            <MenuItem value={"Domine"}>Domine</MenuItem>
-                            <MenuItem value={"Fira Sans"}>Fira Sans</MenuItem>
-                            <MenuItem value={"Georgia, serif"}>Georgia</MenuItem>
-                           <MenuItem value={"&quot;Helvetica Neue&quot;, Arial, sans-serif"}>Helvetica Neue</MenuItem>
-                            <MenuItem value={"Helvetica, Arial, sans-serif"}>Helvetica</MenuItem>
-                           <MenuItem value={"Inconsolata"}>Inconsolata</MenuItem>
-                            <MenuItem value={"Karla"}>Karla</MenuItem>
-                            <MenuItem value={"Lato"}>Lato</MenuItem>
-                            <MenuItem value={"Libre Baskerville"}>Libre Baskerville</MenuItem>
-                            <MenuItem value={"Lora"}>Lora</MenuItem>
-                            <MenuItem value={"Merriweather"}>Merriweather</MenuItem>
-                            <MenuItem value={"Monaco, consolas, monospace"}>Monaco</MenuItem>
-                            <MenuItem value={"Montserrat"}>Montserrat</MenuItem>
-                            <MenuItem value={"Neuton"}>Neuton</MenuItem>
-                            <MenuItem value={"Old Standard TT"}>Old Standard TT</MenuItem>
-                            <MenuItem value={"Open Sans"}>Open Sans</MenuItem>
-                            <MenuItem value={"PT Serif"}>PT Serif</MenuItem>
-                            <MenuItem value={"Playfair Display"}>Playfair Display</MenuItem>
-                            <MenuItem value={"Poppins"}>Poppins</MenuItem>
-                            <MenuItem value={"Roboto Slab"}>Roboto Slab</MenuItem>
-                            <MenuItem value={"Roboto"}>Roboto</MenuItem>
-                            <MenuItem value={"Source Pro"}>Source Pro</MenuItem>
-                            <MenuItem value={"Source Sans Pro"}>Source Sans Pro</MenuItem>
-                            <MenuItem value={"Varela Round"}>Varela Round</MenuItem>
-                            <MenuItem value={"Work Sans"}>Work Sans</MenuItem>
-                        </Select>
+                        <FormControl size="small">
+                            <Select value={"Alegreya Sans"} >
+                                <MenuItem value={"Alegreya Sans"}>Alegreya Sans</MenuItem>
+                                <MenuItem value={"Alegreya"}>Alegreya</MenuItem>
+                                <MenuItem value={"AmericanTypewriter, Georgia, serif"}>American Typewriter</MenuItem>
+                                <MenuItem value={"Anonymous Pro"}>Anonymous Pro</MenuItem>
+                                <MenuItem value={"Archivo Narrow"}>Archivo Narrow</MenuItem>
+                                <MenuItem value={"Arvo"}>Arvo</MenuItem>
+                                <MenuItem value={"Bitter"}>Bitter</MenuItem>
+                                <MenuItem value={"Cardo"}>Cardo</MenuItem>
+                                <MenuItem value={"Chivo"}>Chivo</MenuItem>
+                                <MenuItem value={"Crimson Text"}>Crimson Text</MenuItem>
+                                <MenuItem value={"Domine"}>Domine</MenuItem>
+                                <MenuItem value={"Fira Sans"}>Fira Sans</MenuItem>
+                                <MenuItem value={"Georgia, serif"}>Georgia</MenuItem>
+                            <MenuItem value={"&quot;Helvetica Neue&quot;, Arial, sans-serif"}>Helvetica Neue</MenuItem>
+                                <MenuItem value={"Helvetica, Arial, sans-serif"}>Helvetica</MenuItem>
+                            <MenuItem value={"Inconsolata"}>Inconsolata</MenuItem>
+                                <MenuItem value={"Karla"}>Karla</MenuItem>
+                                <MenuItem value={"Lato"}>Lato</MenuItem>
+                                <MenuItem value={"Libre Baskerville"}>Libre Baskerville</MenuItem>
+                                <MenuItem value={"Lora"}>Lora</MenuItem>
+                                <MenuItem value={"Merriweather"}>Merriweather</MenuItem>
+                                <MenuItem value={"Monaco, consolas, monospace"}>Monaco</MenuItem>
+                                <MenuItem value={"Montserrat"}>Montserrat</MenuItem>
+                                <MenuItem value={"Neuton"}>Neuton</MenuItem>
+                                <MenuItem value={"Old Standard TT"}>Old Standard TT</MenuItem>
+                                <MenuItem value={"Open Sans"}>Open Sans</MenuItem>
+                                <MenuItem value={"PT Serif"}>PT Serif</MenuItem>
+                                <MenuItem value={"Playfair Display"}>Playfair Display</MenuItem>
+                                <MenuItem value={"Poppins"}>Poppins</MenuItem>
+                                <MenuItem value={"Roboto Slab"}>Roboto Slab</MenuItem>
+                                <MenuItem value={"Roboto"}>Roboto</MenuItem>
+                                <MenuItem value={"Source Pro"}>Source Pro</MenuItem>
+                                <MenuItem value={"Source Sans Pro"}>Source Sans Pro</MenuItem>
+                                <MenuItem value={"Varela Round"}>Varela Round</MenuItem>
+                                <MenuItem value={"Work Sans"}>Work Sans</MenuItem>
+                            </Select>
+                        </FormControl>
+
                         </Grid>
                         <br />
                         <Grid item xs={12}>
-                        <TextField variant="outlined" value={"Ajouter du texte..."} sx={{mt:"2px", padding:"0px", width:"90%", height:60, resize:"auto"}}/>
-                        {/*<textarea className={TextCSS.textZone} value={"Ajouter du texte..."}></textarea>*/}
-                   {/*</div>*/}
+                        <TextField variant="outlined" value={"Ajouter du texte..."} className={TextCSS.field}/>
+
                         </Grid>
                     </Grid>
 
-                {/*</div>*/}
                 <div className={TextCSS.horizontalBar}>
                     <Typography>Ajustement</Typography>
-                    {/*<div className={TextCSS.label}>Ajustement</div>*/}
-                    <div className={TextCSS.leftInputs}>
-                        <Select value={"false"} sx={{mt:"5px",mb:"5px", padding:"3px 3px 3px 5px",height:30,width:"100%"}} /*className={TextCSS.adjustment}*/>
+                        <FormControl size="small">
+                        <Select value={"false"}>
                             <MenuItem value={"false"}>Retour à la ligne auto</MenuItem>
                             <MenuItem value={"true"}>Ajuster la taile auto</MenuItem>
                         </Select>
-                    </div>
+                        </FormControl>
+
                 </div>
                 <div className={TextCSS.horizontalBar}>
                     <Grid container>
-                    {/*<div className={TextCSS.label} style={{display:"inline-block"}}>Note</div>*/}
-                    <Grid item xs={5} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <Grid item xs={5}  className={TextCSS.elementCentering}>
                     <Typography>Note</Typography>
                     </Grid>
-                    <Grid item xs={7}>
-                        <Checkbox sx={{mr:"5px",display:"flex",justifyContent:"center",alignItems:"center"}}/>
+                    <Grid item xs={7} className={TextCSS.elementCentering}>
+                        <Checkbox/>
                     </Grid>
                     </Grid>
 
                 </div>
-                <div style={{ display: "none" }}></div>
                 <div className={TextCSS.horizontalBar}>
                     <Grid container>
-                    {/*<div className={TextCSS.label}>Arrondi</div>*/}
-                    <Grid item xs={5} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <Grid item xs={5}  className={TextCSS.elementCentering}>
                     <Typography>Arrondi</Typography>
                     </Grid>
-                    <Grid item xs={7} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                    <div className={TextCSS.leftInputs}><Checkbox /></div>
+                    <Grid item xs={7}  className={TextCSS.elementCentering}>
+                    <Checkbox />
                     </Grid>
                     </Grid>
                 </div>
-                <div style={{ display: "none" }}></div>
                 <div className={TextCSS.horizontalBar}>
                 <Grid container>
-                <Grid item xs={5} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                <Grid item xs={5}  className={TextCSS.elementCentering}>
                 <Typography>Alignement</Typography>
-                    {/*<div className={TextCSS.label}>Alignement</div>*/}
                 </Grid>
-                <Grid item xs={7} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                    <div className={TextCSS.leftInputs}>
+                <Grid item xs={7}  className={TextCSS.elementCentering}>
                         <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" className={TextCSS.preselectedWidget}>
                             <svg viewBox="0 -10 50 50">
                                 <g>
@@ -180,28 +162,28 @@ const Text = () => {
                                     <rect width="230" x="1" height="33"></rect>
                                 </g>
                             </svg></svg>
-                    </div>
                 </Grid>
                 </Grid>
                     </div>
 
                 <div className={TextCSS.horizontalBar}>
-                    {/*<div className={TextCSS.label}>Interligne</div>*/}
                     <Grid container>
-                    <Grid item xs={5} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <Grid item xs={5}  className={TextCSS.elementCentering}>
                     <Typography>Interligne</Typography>
                     </Grid>
-                    <Grid item xs={7} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                    <div className={TextCSS.leftInputs}>
-                    <Input 
+                    <Grid item xs={7}  className={TextCSS.elementCentering}>
+                    <TextField 
+                        inputProps={{
+                        style: {
+                            padding: 5
+                            },
+                        min: 0 }}
          type='number'
-         min='1'
-          style={{width: 50,padding: "3px 5px"}}
             value='1'
+            className={TextCSS.smallField}
+
           />
-                        {/*<input type="number" min="0" className={TextCSS.lineSpacing} value="1" />*/}
                         <span>pt</span>
-                        </div>
                         </Grid>
                         </Grid>
 

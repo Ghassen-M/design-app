@@ -4,13 +4,6 @@
     background: rgb(238, 239, 245) none repeat scroll 0% 0%;
 }
 
-.plusSign {
-    fill: rgb(106, 106, 106);
-    vertical-align: middle;
-    width: 30px;
-    height: 30px;
-}
-
 .symbolBox {
     padding: 10px 5px;
     border-bottom: 1px solid rgb(224, 224, 224);

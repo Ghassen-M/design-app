@@ -1,40 +1,25 @@
+.box{
+    border-left:5px solid #EEEFF5;
+    border-top:5px solid #EEEFF5;
+    border-bottom:5px solid #EEEFF5;
+    margin-bottom : 10px ;
+    padding:10px 10px;
+}
 .disposition {
-    /*background-color: rgb(241, 241, 241);*/
     overflow: hidden;
-    /*padding-bottom: 12px;
-    padding-top: 2px;
-    padding-left: 10px;*/
     border: 0px solid rgb(211, 211, 211);
-    /*margin-bottom: 5px;*/
 }
-
-.horizontalArea {
-    overflow: hidden;
-    margin-top: 10px;
+.iconSize{
+    font-size: 18px;
 }
-
-.leftArea {
-    float: left;
-    width: 85px;
-    padding: 3px;
-
+.elementCentering{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
-
-.rightArea {
-    float: left;
-    margin-right: 5px;
-}
-
 .optionLink {
     color: rgb(81, 81, 81);
     text-decoration: none;
     display: block;
     padding: 2px 0px;
-}
-
-.widget {
-    fill: rgb(106, 106, 106);
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
 }

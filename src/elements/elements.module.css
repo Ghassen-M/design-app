@@ -1,74 +1,29 @@
+.box{
+    border-left:5px solid #EEEFF5;
+    border-top:5px solid #EEEFF5;
+    border-bottom:5px solid #EEEFF5;
+    margin-bottom : 10px ;
+    padding:10px 10px;
+}
 .elements {
-    /*background-color: rgb(241, 241, 241);*/
     overflow: hidden;
-    /*padding-bottom: 12px;
-    padding-top: 2px;
-    padding-left: 10px;*/
     border: 0px solid rgb(211, 211, 211);
-    /*margin-bottom: 5px;*/
 }
-
-.elementsArea {
-    padding-right: 10px;
+.boxTitle{
+    margin-bottom: 10px;
 }
-
-.label {
-    float: none;
-    width: 85px;
-    padding: 3px;
-    display: inline-block;
-    margin-bottom: 0.5em;
+.selectedElement{
+    background-color: rgba(0, 0, 0, 0.08);
 }
-
-.elementsList {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    list-style: none;
+.elementStart{
+    display:flex;
+    justify-content:start;
+    align-items:center;
 }
-
-.MuiListItemContainer {
-    position: relative;
-}
-
-.MuiListItemRoot {
-    width: 100%;
+.buttonPositioning{
     display: flex;
-    position: relative;
-    box-sizing: border-box;
-    text-align: left;
     align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    justify-content: flex-start;
-    text-decoration: none;
-    padding-left: 16px;
-    padding-right: 48px;
 }
-
-.first {
-    flex: 1 1 auto;
-    min-width: 0;
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-.MuiTypographyRoot {
-    font-size: 1rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-}
-
-.MuiListItemSecondaryActionRoot {
-    top: 50%;
-    right: 16px;
-    position: absolute;
-    transform: translateY(-50%);
-}
-
-
 .MuiButtonBaseRoot {
     border-style: none;
     padding: 3px;
