@@ -6,7 +6,7 @@ const Disposition = () => {
         <Box className={DispositionCSS.box}>
             <div className={DispositionCSS.disposition}>
                 <Grid container>
-                    <Grid item xs={5}>
+                    <Grid item xs={5} className={DispositionCSS.labelPositioning}>
                         <Typography>Disposition</Typography>
                     </Grid>
                     <Grid item xs={7} className={DispositionCSS.elementCentering}>

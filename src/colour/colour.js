@@ -7,7 +7,7 @@ const Colour=()=>{
         <Box className={ColourCSS.box}>
             <div className={ColourCSS.colour}>
                 <Grid container>
-                    <Grid item xs={4}  className={ColourCSS.elementCentering}>
+                    <Grid item xs={4}  className={ColourCSS.labelPositioning}>
                             <Typography>Couleur</Typography>
                         </Grid>
                         <Grid item xs={8}  className={ColourCSS.elementCentering}>
@@ -17,7 +17,7 @@ const Colour=()=>{
                         </Grid>
                 </Grid>
                 <Grid container>
-                        <Grid item xs={4}  className={ColourCSS.elementCentering}>
+                        <Grid item xs={4}  className={ColourCSS.labelPositioning}>
                             <Typography>Filtre</Typography>
                         </Grid>
                         <Grid item xs={8}  className={ColourCSS.elementCentering}>

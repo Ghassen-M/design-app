@@ -10,7 +10,7 @@
     border: 0px solid rgb(211, 211, 211);
 }
 .boxTitle{
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 .selectedElement{
     background-color: rgba(0, 0, 0, 0.08);

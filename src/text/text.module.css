@@ -12,10 +12,17 @@
 .smallField{
     width: 50px;
 }
+.selectionWidth{
+    width: 204px;
+}
+.unit{
+    line-height: 200%;
+    margin-left: 25%;
+}
 .field{
     margin-top:2px;
     padding:0px;
-    width:90%;
+    width:204px;
     height:60;
     resize:auto;
 }
@@ -23,17 +30,28 @@
     margin-top: 10px;
     padding-top: 5px;
 }
+.elementSpacing{
+    margin-top: 5px;
+}
+.elementAlignment{
+    margin-left:10px !important;
+}
 .elementCentering{
     display:flex;
     justify-content:center;
     align-items:center;
 }
+.positioning{
+    display:flex;
+    justify-content:start !important;
+    align-items:center !important;
+}
 
 .styleWidget {
     fill: rgb(106, 106, 106);
     vertical-align: middle;
-    width: 16px;
-    height: 16px;
+    margin: 0px 4px;
+    font-size: 18px;
 }
 
 .preselectedWidget {

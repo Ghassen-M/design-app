@@ -84,7 +84,7 @@ const Transform = () => {
             <Grid item xs={4} className={TransformCSS.elementStart}>
               <Typography>Rotation</Typography>
             </Grid>
-            <Grid item xs={2}/>
+            <Grid item xs={4}/>
             <Grid item xs={4} className={TransformCSS.elementCentering}>
               <div className={TransformCSS.boxArea}>
                 <TextField
@@ -101,7 +101,6 @@ const Transform = () => {
                 <FormHelperText className={TransformCSS.sublabel}>angle</FormHelperText> 
               </div>
             </Grid>
-            <Grid item xs={2}/>
             </Grid>
           </Grid>
         </div>

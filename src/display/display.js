@@ -7,10 +7,10 @@ const Display = () => {
     <Box className={DisplayCSS.box} >
       <div className={DisplayCSS.display}>
         <Grid container>
-          <Grid item xs={4}>        
+          <Grid item xs={6}>        
             <Typography>Affichage</Typography>
           </Grid>
-          <Grid item xs={8} className={DisplayCSS.elementCentering}>    
+          <Grid item xs={6} className={DisplayCSS.elementCentering}>    
             <TextField
               id="outlined-helperText"
               inputProps={{

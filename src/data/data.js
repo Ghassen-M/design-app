@@ -5,10 +5,10 @@ const Data = () => {
         <Box className={DataCSS.box} >
                 <div className={DataCSS.data}>
                     <Grid container>
-                        <Grid item xs={4} className={DataCSS.elementCentering} >       
+                        <Grid item xs={5} className={DataCSS.labelPosition} >       
                             <Typography>Données</Typography>
                         </Grid>
-                        <Grid item xs={8} className={DataCSS.elementCentering}>
+                        <Grid item xs={7} className={DataCSS.elementCentering}>
                                 <FormControl size="small">
                                     <Select value={"Aucune"}>
                                         <MenuItem value={"Aucune"}>Aucune</MenuItem>

@@ -11,7 +11,7 @@
 }
 .field{
     width:80px;
-    padding:"0px"
+    padding-right: 10px !important;
 }
 .symbol{
     font-size: 1.4em;
